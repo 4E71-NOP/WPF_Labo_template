@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="Labo_template.ihm.ongletFormulaires"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:local="clr-namespace:Labo_template.ihm"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Margin="16" Width="Auto" MinWidth="800" MinHeight="512">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" MinWidth="128" MaxWidth="192"/>
+            <ColumnDefinition Width="3*" MinWidth="128" MaxWidth="320"/>
+            <ColumnDefinition Width="7*" MinWidth="256" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Tab02LabelA01" Content="Champ d'insertion" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA02" Content="Champ mot de passe" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA03" Content="Champ contraint par RegEx" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA04" Content="CheckBox" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA06" Content="Menu sélection" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA07" Content="Interrupteur" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA08" Content="Sélecteur de date" Margin="10,10,0,0" Grid.Row="8" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA09" Content="Sélecteur de couleur" Margin="10,10,0,0" Grid.Row="9" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="Tab02LabelA11" Content="Champ de type TextArea" Margin="10,10,0,0" Grid.Row="11" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+
+        <Label x:Name="Tab02LabelC01" Content="Résultat" Margin="10,10,0,0" Grid.Row="1" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC02" Content="Résultat" Margin="10,10,0,0" Grid.Row="2" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC03" Content="Résultat" Margin="10,10,0,0" Grid.Row="3" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC04" Content="Résultat" Margin="10,10,0,0" Grid.Row="4" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC05" Content="Résultat" Margin="10,10,0,0" Grid.Row="5" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC06" Content="Résultat" Margin="10,10,0,0" Grid.Row="6" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC07" Content="Résultat" Margin="10,10,0,0" Grid.Row="7" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC08" Content="Résultat" Margin="10,10,0,0" Grid.Row="8" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC09" Content="Résultat" Margin="10,10,0,0" Grid.Row="9" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="Tab02LabelC10" Content="Résultat" Margin="10,10,0,0" Grid.Row="10" Grid.Column="2" IsHitTestVisible="True" VerticalAlignment="Top" Padding="0"/>
+        <TextBlock x:Name="Tab02TextBlockC11" Grid.Column="2" Grid.Row="11" TextWrapping="Wrap" Text="Résultat" Margin="10,10,0,0" MinWidth="64" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="Tab02TextBoxB01" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" TextChanged="Tab02TextBoxB01_TextChanged" Height="18"/>
+        <PasswordBox x:Name="Tab02PasswordBoxB02" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Password="Test123" PasswordChanged="Tab02PasswordBoxB02_PasswordChanged" Height="18" Cursor="AppStarting"/>
+        <TextBox x:Name="Tab02TextBoxB03" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1" TextChanged="Tab02TextBoxB03_TextChanged" Height="18" ToolTip="Que des chiffres SVP"/>
+        <CheckBox x:Name="Tab02CheckBoxB04" Content="CheckBox" Grid.Column="1" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Height="15" ClickMode="Press" Click="Tab02CheckBoxB04_Click"/>
+        <CheckBox x:Name="Tab02CheckBoxB05" Content="CheckBox Trois états" Grid.Column="1" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Height="15" IsThreeState="True" Click="Tab02CheckBoxB05_Click"/>
+        <ComboBox x:Name="Tab02ComboBoxB06" Grid.Column="1" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Height="22" SelectionChanged="Tab02ComboBoxB06_SelectionChanged" MaxDropDownHeight="128" >
+            <ComboBoxItem Content="Choix 01" Name="A1"/>
+            <ComboBoxItem Content="Choix 02" Name="A2"/>
+            <ComboBoxItem Content="Choix 03" Name="A3"/>
+            <ComboBoxItem Content="Choix 04" Name="A4"/>
+            <ComboBoxItem Content="Choix 05" Name="A5"/>
+            <ComboBoxItem Content="Choix 06" Name="A6"/>
+            <ComboBoxItem Content="Choix 07" Name="A7"/>
+            <ComboBoxItem Content="Choix 08" Name="A8"/>
+            <ComboBoxItem Content="Choix 09" Name="A9"/>
+            <ComboBoxItem Content="Choix 10" Name="A10"/>
+            <ComboBoxItem Content="Choix 11" Name="A11"/>
+            <ComboBoxItem Content="Choix 12" Name="A12"/>
+            <ComboBoxItem Content="Choix 13" Name="A13"/>
+            <ComboBoxItem Content="Choix 14" Name="A14"/>
+            <ComboBoxItem Content="Choix 15" Name="A15"/>
+            <ComboBoxItem Content="Choix 16" Name="A16"/>
+            <ComboBoxItem Content="Choix 17" Name="A17"/>
+            <ComboBoxItem Content="Choix 18" Name="A18"/>
+            <ComboBoxItem Content="Choix 19" Name="A19"/>
+            <ComboBoxItem Content="Choix 20" Name="A20"/>
+        </ComboBox>
+        <Button x:Name="Tab02ButtonB07" Content="Button" Grid.Column="1" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" Click="Tab02ButtonB07_Click" Height="20"/>
+        <DatePicker x:Name="Tab02DatePickerB08" Grid.Column="1" Margin="10,10,0,0" Grid.Row="8" VerticalAlignment="Top" SelectedDateFormat="Short" Cursor="Pen" CalendarClosed="Tab02DatePickerB08_CalendarClosed" Height="24" HorizontalContentAlignment="Stretch"/>
+        <xctk:ColorPicker x:Name="Tab02ColorPickerB09" SelectedColorChanged="Tab02ColorPickerB09_SelectedColorChanged" Grid.Column="1" Margin="10,10,0,0" Grid.Row="9" MaxWidth="256" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Top" VerticalAlignment="Top"/>
+        <Button x:Name="Tab02ButtonB10" Content="Ouvrir le sélecteur système" Grid.Column="1" Margin="10,10,0,0" Grid.Row="10" VerticalAlignment="Top" Click="Tab02ButtonB10_Click" Height="20"/>
+        <TextBox x:Name="Tab02TextBoxB11" Grid.Column="1" Margin="10,10,0,0" Grid.Row="11" TextWrapping="Wrap" Text="TextBox" TextChanged="Tab02TextBoxB11_TextChanged" MinHeight="64"/>
+
+    </Grid>
+</UserControl>

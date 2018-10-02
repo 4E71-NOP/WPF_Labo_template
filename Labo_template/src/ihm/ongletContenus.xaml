@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Labo_template.ihm.ongletContenus"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Labo_template.ihm"
+             mc:Ignorable="d" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Expander Header="Expander" Margin="10" Grid.Column="1" Grid.RowSpan="2">
+            <Grid Background="#FFE5E5E5"/>
+        </Expander>
+        <ToolBar HorizontalAlignment="Left" Height="113" Margin="10,10,0,0" VerticalAlignment="Top" Width="310">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="84" Margin="0,10,0,0">
+                <Image Height="64" Width="64" Source="/Labo_template;component/src/ressources/media/img/animale-staroffice-summerbird-icone-6155-128.png" MaxWidth="256" MaxHeight="256" Margin="8"/>
+            </Button>
+            <Separator Height="108" Margin="0,0,0,0" VerticalAlignment="Top" Width="16"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="84" Margin="0,10,0,0">
+                <Image Height="64" Width="64" Source="/Labo_template;component/ressources/media/img/animale-staroffice-summerbird-icone-6155-128.png" IsEnabled="False" MaxWidth="256" MaxHeight="256" Margin="8"/>
+            </Button>
+        </ToolBar>
+        <ToolBarPanel HorizontalAlignment="Left" Height="96" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="310" Orientation="Horizontal">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="84">
+                <Image Height="64" Width="64" Source="/Labo_template;component/src/ressources/media/img/animale-staroffice-summerbird-icone-6155-128.png" MaxWidth="256" MaxHeight="256" Margin="8"/>
+            </Button>
+            <Separator Height="96" Margin="0" VerticalAlignment="Top" Width="16"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="84">
+                <Image Height="64" Width="64" Source="/Labo_template;component/src/ressources/media/img/shutdown-icone-6319-128.png" IsEnabled="False" MaxWidth="256" MaxHeight="256"/>
+            </Button>
+        </ToolBarPanel>
+        <ToolBarTray HorizontalAlignment="Left" Height="117" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="310"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="84" Margin="10,22,0,0" Grid.Row="2">
+            <Image Height="64" Width="64" Source="/Labo_template;component/src/ressources/media/img/animale-staroffice-summerbird-icone-6155-128.png" MaxWidth="256" MaxHeight="256" Margin="8"/>
+        </Button>
+        <Separator Height="96" Margin="94,22,245,0" VerticalAlignment="Top" Grid.Row="2"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="84" Width="84" Margin="110,22,0,0" Grid.Row="2">
+            <Image Height="64" Width="64" Source="/Labo_template;component/src/ressources/media/img/shutdown-icone-6319-128.png" IsEnabled="False" MaxWidth="256" MaxHeight="256"/>
+        </Button>
+
+    </Grid>
+</UserControl>

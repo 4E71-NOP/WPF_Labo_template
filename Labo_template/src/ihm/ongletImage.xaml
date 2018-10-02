@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Labo_template.ihm.ongletImage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Labo_template.ihm"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Cursor="ArrowCD" MinWidth="256" MinHeight="64">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" MinWidth="128" />
+            <ColumnDefinition Width="10*" MinWidth="128" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" MinHeight="64"/>
+            <RowDefinition Height="2*" MinHeight="64"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Tab07ButtonA01" Content="Voir une image" Margin="10,10,0,0" Click="Tab07ButtonA01_Click" VerticalAlignment="Top"/>
+
+        <Label x:Name="Tab07ButtonA100" Content="Plein d'information sur l'image en cours de traitement" Margin="0" Grid.Row="1" Padding="5" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.ColumnSpan="2"/>
+        <ScrollViewer Grid.Column="1">
+        <Image x:Name="Tab07ImageB01" Margin="0" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" MinWidth="256" MinHeight="256"/>
+            
+        </ScrollViewer>
+
+    </Grid>
+</UserControl>

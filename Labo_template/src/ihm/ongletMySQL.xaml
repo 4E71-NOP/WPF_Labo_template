@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Labo_template.ihm.ongletMySQL"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Labo_template.ihm"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="1*" MaxHeight="48"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" MaxWidth="256"/>
+                <ColumnDefinition Width="3*" MaxWidth="256"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="Tab13LabelA02" Content="IP Serveur BDD" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <Label x:Name="Tab13LabelA03" Content="Utilisateur" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+            <Label x:Name="Tab13LabelA04" Content="Mot de passe" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="3"/>
+            <Label x:Name="Tab13LabelA05" Content="BDD" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="4"/>
+            <Label x:Name="Tab13LabelA06" Content="Options" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="5"/>
+            <Label x:Name="Tab13LabelA07" Content="Requête SQL" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="6"/>
+            <DataGrid x:Name="Tab13DataGridC01" Grid.Column="2" Margin="10,10,0,0" Grid.RowSpan="8" ItemsSource="{Binding}"/>
+            <TextBox x:Name="Tab13TextBoxB02" Grid.Column="1" Height="23" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="Tab13TextBoxB03" Grid.Column="1" Height="23" Margin="10,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="Tab13TextBoxB05" Grid.Column="1" Height="23" Margin="10,10,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="Tab13TextBoxB06" Grid.Column="1" Height="23" Margin="10,10,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="Tab13TextBoxB07" Grid.Column="1" Height="23" Margin="10,10,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <PasswordBox x:Name="Tab13PasswordBoxB04" Grid.Column="1" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="23"/>
+            <Button x:Name="Tab13ButtonB01" Content="Paramètres par défaut" Grid.Column="1" Margin="10,10,0,0" VerticalAlignment="Top" Click="Tab13ButtonB01_Click"/>
+            <Button x:Name="Tab13ButtonB08" Content="Connexion" Grid.Column="1" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" Click="Tab13ButtonB08_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

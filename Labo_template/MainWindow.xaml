@@ -1,0 +1,110 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:localIhm="clr-namespace:Labo_template.ihm"
+        xmlns:localEntity="clr-namespace:Labo_template.Entity"
+        xmlns:local="clr-namespace:Labo_template" x:Name="FenetreInitiale" x:Class="Labo_template.MainWindow"
+        mc:Ignorable="d"
+        Title="Labo_template" d:DesignWidth="1014" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" d:DesignHeight="712" Margin="0" Icon="src/ressources/media/img/Lab_javaFX_interfaces_icone.png" WindowStartupLocation="CenterScreen" Deactivated="FenetreInitiale_Deactivated" Activated="FenetreInitiale_Activated" MinWidth="64" MinHeight="64">
+    <DockPanel>
+
+        <StatusBar Margin="0" MinWidth="256" MinHeight="32" Background="#19000000" DockPanel.Dock="Bottom">
+            <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" MinWidth="108"/>
+                    <ColumnDefinition Width="4*" MinWidth="384"/>
+                    <ColumnDefinition Width="1*" MinWidth="32"/>
+                    <ColumnDefinition Width="6*" MinWidth="384"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Message console : "/>
+                <Label x:Name="XamlPsbLabelMessage" Content="{Binding Source={x:Static localEntity:ApplicationGlobalVariables.GetInstance}, Path=PsbLabelMessage}" Grid.Column="1" FontWeight="Bold"/>
+                <Label Content=" "  Grid.Column="2"/>
+                <Label Content="Labo_Template C# - Faust MDA (2018) Tous droits résevés" HorizontalContentAlignment="Right" Grid.Column="3" Foreground="#FF05696E" FontWeight="Bold"/>
+            </Grid>
+        </StatusBar>
+
+        <!--Insertion des XAML satelite comme un include
+        https://stackoverflow.com/questions/11544274/include-xaml-element-in-xaml-->
+
+        <Grid Margin="0" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinWidth="72" MinHeight="24">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12*" MinWidth="512"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12*" MinHeight="512"/>
+            </Grid.RowDefinitions>
+            <TabControl Margin="10" MinWidth="72" MinHeight="24" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                <TabItem x:Name="tab01" Header="Boutons" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletBoutons x:Name="ongletBoutons" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab02" Header="Formulaires" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletFormulaires x:Name="ongletFormulaires" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab03" Header="Controles" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletControles x:Name="ongletControles" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab04" Header="Tables" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5" Margin="0">
+                        <localIhm:ongletTables x:Name="ongletTables" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab05" Header="Listes" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletListes x:Name="ongletListes" Margin="0"/>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab06" Header="TreeView" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletTreeView x:Name="ongletTreeView" Margin="0"/>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab07" Header="Image" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletImage x:Name="ongletImage" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab08" Header="Editeur HTML" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletEditeurHtml x:Name="ongletEditeurHtml" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab09" Header="WebView" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletWebView x:Name="ongletWebView" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab10" Header="Contenu" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletContenus x:Name="ongletContenus" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab11" Header="Menu" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletMenu x:Name="ongletMenu" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab12" Header="Graphique" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletGraphiques x:Name="ongletGraphiques" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab13" Header="MySQL" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletMySQL x:Name="ongletMySQL" Margin="0" />
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
+        </Grid>
+
+    </DockPanel>
+
+</Window>
