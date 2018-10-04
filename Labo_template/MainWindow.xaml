@@ -7,7 +7,7 @@
         xmlns:localEntity="clr-namespace:Labo_template.Entity"
         xmlns:local="clr-namespace:Labo_template" x:Name="FenetreInitiale" x:Class="Labo_template.MainWindow"
         mc:Ignorable="d"
-        Title="Labo_template" d:DesignWidth="1014" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" d:DesignHeight="712" Margin="0" Icon="src/ressources/media/img/Lab_javaFX_interfaces_icone.png" WindowStartupLocation="CenterScreen" Deactivated="FenetreInitiale_Deactivated" Activated="FenetreInitiale_Activated" MinWidth="64" MinHeight="64">
+        Title="Labo_template" d:DesignWidth="1156" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" d:DesignHeight="712" Margin="0" Icon="src/ressources/media/img/Lab_javaFX_interfaces_icone.png" WindowStartupLocation="CenterScreen" Deactivated="FenetreInitiale_Deactivated" Activated="FenetreInitiale_Activated" MinWidth="64" MinHeight="64">
     <DockPanel>
 
         <StatusBar Margin="0" MinWidth="256" MinHeight="32" Background="#19000000" DockPanel.Dock="Bottom">
@@ -96,7 +96,12 @@
                         <localIhm:ongletGraphiques x:Name="ongletGraphiques" Margin="0" />
                     </Grid>
                 </TabItem>
-                <TabItem x:Name="tab13" Header="MySQL" Margin="0" MinWidth="72" MinHeight="24">
+                <TabItem x:Name="tab13" Header="Vidéo" Margin="0" MinWidth="72" MinHeight="24">
+                    <Grid Background="#FFE5E5E5">
+                        <localIhm:ongletVideoVLC x:Name="ongletVideoVLC" Margin="0" />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tab14" Header="MySQL" Margin="0" MinWidth="72" MinHeight="24">
                     <Grid Background="#FFE5E5E5">
                         <localIhm:ongletMySQL x:Name="ongletMySQL" Margin="0" />
                     </Grid>

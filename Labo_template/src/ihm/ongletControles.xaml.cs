@@ -52,10 +52,6 @@ namespace Labo_template.ihm
         //    timer.Start();
         //}
 
-
-
-
-
         private void Tab03SliderA01_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             double valBrute = Tab03SliderA01.Value;
