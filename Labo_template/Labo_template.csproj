@@ -302,5 +302,8 @@
     <Resource Include="src\ressources\media\img\Lab_javaFX_interfaces_icone.png" />
     <Resource Include="src\ressources\media\img\shutdown-icone-6319-128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="doc\README.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,8 +10,8 @@
     <Grid x:Name="gridTab13">
         <Grid.RowDefinitions>
             <RowDefinition Height="70*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="15*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <vlc:VlcControl x:Name="vlcPlayer" Grid.Row="0" />
 
@@ -21,14 +21,14 @@
         <Button x:Name="Tab13ButtonC04" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="148,35,0,0" MinWidth="64.2" Click="Tab13ButtonC04_Click" Content="Stop"/>
         <Label x:Name="Tab13LabelC01" Content="Info:" Margin="225,10,10,12" Grid.Row="2" RenderTransformOrigin="0.395,-0.192" Height="45" Width="565"/>
 
-        <Grid Grid.Row="1" Margin="15,16,10,6" Height="46">
+        <Grid Grid.Row="1" Margin="15,16,10,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="75*"/>
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
 
-            <Slider x:Name="Tab13SliderB01" Height="20" Margin="10,10,10,16" ValueChanged="Tab13SliderB01_ValueChanged" Maximum="1"  Value="0" TickPlacement="BottomRight" Cursor="Hand" SmallChange="0.01" LargeChange="0.1"/>
-            <Slider x:Name="Tab13SliderB02" Height="20" Margin="10,10,10,16" ValueChanged="Tab13SliderB02_ValueChanged" Grid.Column="1" Maximum="100" Value="100"/>
+            <Slider x:Name="Tab13SliderB01" Height="20" Margin="3,0" ValueChanged="Tab13SliderB01_ValueChanged" Maximum="1"  Value="0" Cursor="Hand" SmallChange="0.01" LargeChange="0.1" Background="#19000000" ToolTip="Recherche" BorderThickness="1" BorderBrush="#3F000000" TickPlacement="BottomRight"/>
+            <Slider x:Name="Tab13SliderB02" Height="20" Margin="3,0" ValueChanged="Tab13SliderB02_ValueChanged" Grid.Column="1" Maximum="100" Value="100" Background="#19000000" Cursor="Hand" TickPlacement="BottomRight" ToolTip="Volume du son" BorderThickness="1" BorderBrush="#3F000000"/>
 
         </Grid>
     </Grid>

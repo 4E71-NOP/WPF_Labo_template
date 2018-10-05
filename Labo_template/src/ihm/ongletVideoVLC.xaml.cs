@@ -99,6 +99,7 @@ namespace Labo_template.ihm
 
                     var options = new string[] { "-vvv" };
                     Uri fUri = new Uri("file://" + fichierNomComplet);
+                    Tab13SliderB01.Value = 0;
                     vlcPlayer.MediaPlayer.Play(fUri, options);
                 }
                 catch (Exception ex)
